@@ -1,0 +1,10 @@
+#canvas-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+#input-container {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}

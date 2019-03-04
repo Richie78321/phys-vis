@@ -1,0 +1,161 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:15px;
+  line-height:1.5;
+  padding:0;
+  margin:0;
+  background-color:#EDF5E1;
+}
+
+.container {
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+header {
+  background: #05386B;
+  color:#EDF5E1;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#379683 3px solid;
+}
+
+header a {
+  color:#EDF5E1;
+  text-decoration:none;
+}
+
+header nav a {
+  text-transform:uppercase;
+  font-size:16px;
+  transition: .1s;
+}
+
+header ul {
+  padding:0;
+  margin:0;
+}
+
+header li {
+  display:inline;
+  padding: 0 20px 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  margin-top:12px;
+  float:right;
+}
+
+header .highlight, header .current a{
+  color:#5CDB95;
+  font-weight:bold;
+}
+
+header nav a:hover{
+  color:#8EE4AF;
+  transition: .1s;
+}
+
+#selection .container {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+
+#selection .box {
+  padding: 10px;
+  width:35%;
+  text-align:center;
+  color: #05386B;
+  box-shadow: 2px 2px 2px #379683;
+  border: 2px solid #379683;
+  margin: 20px;
+  text-decoration:none;
+  font-size:16px;
+  transition: .1s;
+}
+
+#selection .box img {
+  width: 100%;
+}
+
+#selection .box:hover {
+  box-shadow: 5px 5px 5px #379683;
+  transition: .1s;
+}
+
+#selection {
+  margin: 20px;
+}
+
+footer {
+  position:absolute;
+  bottom:0;
+  width: 100%;
+  margin-top:20px;
+  background-color:#379683;
+  color:#EDF5E1;
+  text-align:center;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+#construction img {
+  display: block;
+  margin:auto;
+}
+
+#construction {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Mobile accessibility */
+@media(max-width: 768px){
+  header #branding, header nav, header nav li {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+}
